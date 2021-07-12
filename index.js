@@ -41,6 +41,10 @@ const Information = mongoose.model('Information',Basic);
 app.get('/',function(req,res){
     res.sendFile(__dirname + '/public/index.html')
 })
+app.get('/',function(req,res){
+   res.sendFile(__dirname + './public/css/main.css')
+ })
+
 
 
 
